@@ -5,13 +5,13 @@ import os
 from tqdm import tqdm
 
 # ---------------- CONFIG ----------------
-ROOT_DIR = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split"  # Ana klasör
+ROOT_DIR = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split_excerpt"  # Ana klasör
 FPS = 10
 CHUNK_DURATION = 4
 KEYPOINT_DIM = 2
 # ----------------------------------------
 
-ANGLE_KEYPOINTS = {
+ANGLE_KEYPOINTS = {     # calculating angles from a, b, c coordinates 
     "Elbow (L)":  [11, 13, 15],
     "Elbow (R)":  [12, 14, 16],
     "Knee (L)":   [23, 25, 27],

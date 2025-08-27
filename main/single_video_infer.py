@@ -12,12 +12,12 @@ import mediapipe as mp
 from train_lstm import DanceLSTM  # eğitimdekiyle birebir aynı olmalı
 
 # ------------------ CONFIG ------------------
-TEST_VIDEO = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split\BR\gBR_sFM_c01_d04_mBR4_ch05.mp4"
-MODEL_PATH = "lstm_dance_model.pth"   # eğittiğin dosya
+TEST_VIDEO = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split_excerpt\JS\gJS_sFM_c01_d01_mJS3_ch04.mp4"
+MODEL_PATH = r"main\lstm_dance_model.pth"
 TARGET_FPS = 10
 CHUNK_DURATION = 4
 SEQ_LEN = TARGET_FPS * CHUNK_DURATION  # 40
-DEVICE = "cpu"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 TOPK = 10
 # --------------------------------------------
 
