@@ -4,7 +4,7 @@ import numpy as np
 np.set_printoptions(threshold=np.inf, linewidth=np.inf)
 
 # Dosyayı yükle
-npz_path = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split\WA\gWA_sFM_c01_d25_mWA5_ch06\pose\gWA_sFM_c01_d25_mWA5_ch06_003_pose.npz"
+npz_path = r"C:\Users\kutay\OneDrive\Desktop\Computer Vision\AistDataset\alignment_matrix.npy"
 data = np.load(npz_path)
 
 # Anahtarları göster

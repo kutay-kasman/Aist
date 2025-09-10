@@ -5,7 +5,7 @@ from train_lstm import DanceLSTM  # eğitimde kullandığın LSTM modeli
 
 # ------------------ CONFIG ------------------
 NPZ_PATH = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split_excerpt\KR\gKR_sBM_c01_d28_mKR3_ch03\angles\gKR_sBM_c01_d28_mKR3_ch03_001_angles.npz"
-NPZ_DIR  = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_genre_split_excerpt"  # tüm test için
+NPZ_DIR  = r"C:\Users\kutay\OneDrive\Desktop\AISTpp_split_ready\test"  # tüm test için
 MODEL_PATH = r"lstm_dance_model4.pth"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 TOPK = 3
